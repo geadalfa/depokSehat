@@ -1,4 +1,5 @@
 
+positif	-1
 korona	-1
 corona	-1
 covid	-1
@@ -6612,6 +6613,10 @@ penggaruk	-3
 senewen	-4
 menetapkan	-5
 kacang botor	-3
+manfaat	3
+semoga	2
+pemerintah	1
+depok	1
 tiba	2
 vaksinasi	3
 vaksin	3

@@ -1,4 +1,8 @@
-﻿tiba,2
+﻿manfaat,3
+semoga,2
+pemerintah,1
+depok,1
+tiba,2
 vaksinasi,3
 vaksin,3
 hai,3

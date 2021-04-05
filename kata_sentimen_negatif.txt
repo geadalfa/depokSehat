@@ -1,4 +1,5 @@
-﻿korona,-1
+﻿positif,-1
+korona,-1
 corona,-1
 covid,-1
 pandemi,-2
