@@ -18,7 +18,7 @@ ambil -2
 ambisi -2
 ambivalen -2
 amor 2
-amoral -3 
+amoral -3
 amus 2
 anarki -2
 anarkis -2
@@ -65,7 +65,7 @@ bangkrut -3
 banjir -2
 barbari -3
 basi -2
-batu -2 
+batu -2
 bau -3
 baut -2
 bawaan -2

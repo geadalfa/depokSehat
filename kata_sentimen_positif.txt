@@ -1,4 +1,7 @@
-﻿hai,3
+﻿tiba,2
+vaksinasi,3
+vaksin,3
+hai,3
 merekam,2
 ekstensif,3
 paripurna,1

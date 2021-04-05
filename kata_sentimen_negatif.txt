@@ -1,4 +1,8 @@
-﻿putus tali gantung,-2
+﻿korona,-1
+corona,-1
+covid,-1
+pandemi,-2
+putus tali gantung,-2
 gelebah,-2
 gobar hati,-2
 tersentuh (perasaan),-1
