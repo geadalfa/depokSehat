@@ -1,9 +1,12 @@
 
+kali,-1
+terbatas,-3
+penyebabnya,-4
 positif,-1
-korona,-1
-corona,-1
-covid,-1
-pandemi,-2
+korona,-2
+corona,-2
+covid,-2
+pandemi,-4
 putus tali gantung,-2
 gelebah,-2
 gobar hati,-2
@@ -1113,6 +1116,7 @@ menciut,-3
 bengkak hati,-3
 kekosongan,-3
 dendam,-5
+denda,-3
 gaenak,-3
 susahnya,-3
 mucikari,-5
@@ -6613,6 +6617,9 @@ penggaruk,-3
 senewen,-4
 menetapkan,-5
 kacang botor,-3
+beres,1
+pulih,2
+beres,1
 manfaat,3
 semoga,2
 pemerintah,1
@@ -9066,12 +9073,10 @@ berjiwa,3
 praktis,4
 santiran,3
 berpakaian,4
-denda,3
 melongo,3
 akil,4
 bos,3
 eka,3
-hilang,3
 lakeri,3
 sebandung,3
 transparan,3

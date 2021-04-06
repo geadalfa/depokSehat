@@ -1,4 +1,7 @@
-﻿manfaat,3
+﻿beres,1
+pulih,2
+beres,1
+manfaat,3
 semoga,2
 pemerintah,1
 depok,1
@@ -2451,12 +2454,10 @@ berjiwa,3
 praktis,4
 santiran,3
 berpakaian,4
-denda,3
 melongo,3
 akil,4
 bos,3
 eka,3
-hilang,3
 lakeri,3
 sebandung,3
 transparan,3

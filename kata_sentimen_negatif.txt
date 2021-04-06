@@ -1,8 +1,11 @@
-﻿positif,-1
-korona,-1
-corona,-1
-covid,-1
-pandemi,-2
+﻿kali,-1
+terbatas,-3
+penyebabnya,-4
+positif,-1
+korona,-2
+corona,-2
+covid,-2
+pandemi,-4
 putus tali gantung,-2
 gelebah,-2
 gobar hati,-2
@@ -1112,6 +1115,7 @@ menciut,-3
 bengkak hati,-3
 kekosongan,-3
 dendam,-5
+denda,-3
 gaenak,-3
 susahnya,-3
 mucikari,-5
