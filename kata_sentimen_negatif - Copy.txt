@@ -15,11 +15,8 @@ larat hati,-3
 nelangsa,-3
 remuk redam,-5
 tidak segan,-2
-gemar,-1
 tak segan,-1
 sesal,-4
-pengen,-2
-penghayatan,-2
 absorpsi,-1
 linu,-4
 salah benang,-1
@@ -32,48 +29,31 @@ maaf,-3
 mengkhianat,-4
 mencelakai,-5
 mulu,-1
-ngga,-2
+ngga,-1
 borong,-1
-lever,-2
-kasian,-3
-gamau,-4
-doang,-1
+kasian,-2
+gamau,-2
 pulas,-1
 abis,-2
-coba,-1
-kangen,-3
+kangen,-1
 kalau,-1
 maunya,-1
 seandainya,-1
-marilah,-1
-bener,-1
-yaudah,-4
+yaudah,-2
 nggak,-3
 gatau,-1
-apaan,-4
-ngakak,-2
-atuh,-1
-sekali,-1
+apaan,-1
 menarik hati,-1
 cedayam,-2
-kece,-3
 termakan,-1
 belom,-1
-malem,-1
 mencekau,-2
 menduga,-1
-menyuarakan,-1
-memprediksi,-1
-membunyikan,-1
 menerka,-1
-menaksir,-1
-mengantisipasi,-1
-nangis,-5
+nangis,-3
 rompok,-2
-soalnya,-1
-griya,-1
-gubuk,-2
-anjir,-3
+gubuk,-1
+anjir,-2
 putus jiwa,-5
 berlalu dr dunia,-5
 putus nyawa,-5
@@ -91,14 +71,10 @@ buntet,-2
 tamat riwayatnya,-3
 menamatkan riwayatnya,-3
 hilang nyawa,-5
-males,-4
+males,-2
 asih,-1
-kasih sayang,-1
-kekaguman,-1
 dendam berahi,-4
-rindu,-3
-afeksi,-2
-cinta kasih,-1
+rindu,-1
 renjana,-2
 pagina,-2
 tresna,-1
