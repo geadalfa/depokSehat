@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
-<html >
+<html>
 <!--From https://codepen.io/frytyler/pen/EGdtg-->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<title>Home</title>
-	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 <style>
 
@@ -43,22 +43,28 @@ body {
 	
 }
 
+
+
+
+
+
+
 </style>
 <body>
 <div>
 
-  													<!--navbar portion-->
-  <nav class="navbar navbar-expand-sm bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><b>Sentiment Analysis Covid-19 di Kota Depok</b></a>
-  <a class="navbar-brand" href="#"><b><font size="2">BY GEADALFA GIYANDA</font></b></a>
-  <ul class="navbar-nav" >
-    <li class="nav-item">
-    </li>
-    <li class="nav-item">
-    </li>
-  </ul>
-</nav>
-<br>
+    <!--navbar portion-->
+    <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><b>Sentiment Analysis Covid-19 di Kota Depok</b></a>
+        <a class="navbar-brand" href="#"><b><font size="2">BY GEADALFA GIYANDA</font></b></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+            </li>
+        </ul>
+    </nav>
+    <br>
 </div>
 <style>
 #ip3 {
@@ -69,6 +75,12 @@ body {
     height: 95px; 
 }
 
+
+
+
+
+
+
 </style>
 <style>
 #ip4 {
@@ -78,36 +90,47 @@ body {
     width: 1600px;
     height: 300px; 
 }
+
+
+
+
+
+
 </style>
 <body>
 
 <br><br>
-<h2 id="ip3"><marquee BEHAVIOR=ALTERNATE direction = "right">Drug Review Sentiment Analysis</marquee></h2>
-		
-	</div>
+<h2 id="ip3">
+    <marquee BEHAVIOR=ALTERNATE direction="right">Drug Review Sentiment Analysis</marquee>
+</h2>
+
+</div>
 
 <body>
 
 
 <div id="drugname">
-<h2><center>ML App</center></h2>
+    <h2>
+        <center>ML App</center>
+    </h2>
 
 
 </div>
-	
-	<p style="color:white;font-size:20;text-align: center;"><b>Results for Comment</b></p>
-	<div class="results" "w3-container w3-card " style= "border-radius:58px;background-color:white;padding:40px;width: 1350px;" id="ip4">
-        	
-	{% if prediction == 1%}
-	<h2 style="color:blue;">Netral </h2>
-	{% elif prediction == 0%}
-	<h2 style="color:red;">Negatif</h2>
-    {% elif prediction == 2%}
-    <h2 style="color:red;">Positif</h2>
-	{% endif %}
 
-        </div>
-	</div>
+<p style="color:white;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+<div class="results"
+"w3-container w3-card " style= "border-radius:58px;background-color:white;padding:40px;width: 1350px;" id="ip4">
+
+{% if prediction == 1%}
+<h2 style="color:blue;">Netral </h2>
+{% elif prediction == 0%}
+<h2 style="color:red;">Negatif</h2>
+{% elif prediction == 2%}
+<h2 style="color:red;">Positif</h2>
+{% endif %}
+
+</div>
+</div>
 
 </body>
 </html>

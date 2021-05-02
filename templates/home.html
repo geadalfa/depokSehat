@@ -1,19 +1,19 @@
 <html>
 <head>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-<div>  
-<nav class="navbar navbar-expand-sm bg-dark fixed-top">
-  <a class="navbar-brand" href="#"><b>Drug Review Sentiment Analysis</b></a>
-  <a class="navbar-brand" href="#"><b><font size="2">BY DHEERAJ KUMAR</font></b></a>
-</nav>
-</div>
+
+    <div>
+        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+            <a class="navbar-brand" href="#"><b>Analisis Sentimen Covid-19 di Kota Depok</b></a>
+            <a class="navbar-brand" href="#"><b><font size="2">By: Geadalfa Giyanda</font></b></a>
+        </nav>
+    </div>
 
 </head>
 <br>
@@ -76,8 +76,6 @@
   font-weight: bold;
 }
 
-
-
 .website
 {
   font-weight: bold;
@@ -127,6 +125,8 @@
 {
   background: blue;
 }
+
+
 </style>
 <style>
 * {
@@ -299,43 +299,58 @@ h1 {
   }
 }
     
+
+
 </style>
 <br><br>
 <div class="background1">
-  <div class="background2">
-    <div class="background3">
-      <div class="content">
-	<center><div class="monospace"><b>Helo Iam</b></div></center>
-        <center><div class="monospace"><font size="5"><b>Dheeraj Kumar</b></font></div></center>
-        <br>
-	<p style="text-align:left;"><font size="5"><b>Project Description</b></font></p>
-	
-        <div class="text">Sentiment Analysis also known as Opinion Mining refers to the use of natural language
-processing, text analysis to systematically identify, extract, quantify, and study affective
-states and subjective information.</div><br> <div class="text">Sentiment analysis is widely applied to reviews and
-survey responses, online and social media, and healthcare materials for applications that
-range from marketing to customer service to clinical medicine.</div><br>
-<div class="text">In this project, we aim to perform Sentiment Analysis of Drug reviews. Data used
-in this project are online product reviews collected from “amazon.com”. We expect to do
-review-level categorization of review data with promising outcomes.</div>
-        <br><br>
-      </div>
-      </div>
+    <div class="background2">
+        <div class="background3">
+            <div class="content">
+                <center>
+                    <div class="monospace"><b>Helo Iam</b></div>
+                </center>
+                <center>
+                    <div class="monospace"><font size="5"><b>Dheeraj Kumar</b></font></div>
+                </center>
+                <br>
+                <p style="text-align:left;"><font size="5"><b>Project Description</b></font></p>
+
+                <div class="text">Sentiment Analysis also known as Opinion Mining refers to the use of natural language
+                    processing, text analysis to systematically identify, extract, quantify, and study affective
+                    states and subjective information.
+                </div>
+                <br>
+                <div class="text">Sentiment analysis is widely applied to reviews and
+                    survey responses, online and social media, and healthcare materials for applications that
+                    range from marketing to customer service to clinical medicine.
+                </div>
+                <br>
+                <div class="text">In this project, we aim to perform Sentiment Analysis of Drug reviews. Data used
+                    in this project are online product reviews collected from “amazon.com”. We expect to do
+                    review-level categorization of review data with promising outcomes.
+                </div>
+                <br><br>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="social">
-    
-  </div>
 </div>
-<center><div class="website"><font color="white" size="6"><b>Welcome My Project</b></font></div></center>
+<div class="social">
+
+</div>
+</div>
+<center>
+    <div class="website"><font color="white" size="6"><b>Welcome My Project</b></font></div>
+</center>
 <div class="wrapper">
     <div class="main-div main-div1">
-      <h1>Drug Review Sentiment Analysis</h1>
-    </div><br>
-<br>
-<body>
+        <h1>Drug Review Sentiment Analysis</h1>
+    </div>
+    <br>
+    <br>
+    <body>
 
-<style>
+    <style>
 #ip4 {
     border-radius: 25px 80px 10px;
     border: 6px solid #609;
@@ -343,26 +358,30 @@ review-level categorization of review data with promising outcomes.</div>
     width: 600px;
     height: 245px; 
 }
-</style>
-<br>
-  
 
-<br>
 
-	</div>
-	
+    </style>
+    <br>
 
-	<div class="ml-container">
 
-		<center><form action="{{ url_for('predict')}}" method="POST">
-		<h1 class="text-red blink-hard">Enter Your Review Here</h1>
-	
-		<textarea name="review" rows="6" cols="50" required="required" id="ip4"></textarea>
-		<br/>
-<br><br>
-		<input type="submit" class="btn btn-primary btn-lg"  value="predict">
-	<br><br><br><br>
-	</form></center>
-</body>
- 
+    <br>
+
+</div>
+
+
+<div class="ml-container">
+
+    <center>
+        <form action="{{ url_for('predict')}}" method="POST">
+            <h1 class="text-red blink-hard">Masukkan Teks</h1>
+
+            <textarea name="review" rows="6" cols="50" required="required" id="ip4"></textarea>
+            <br/>
+            <br><br>
+            <input type="submit" class="btn btn-primary btn-lg" value="predict">
+            <br><br><br><br>
+        </form>
+    </center>
+    </body>
+
 </html>
