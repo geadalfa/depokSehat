@@ -31,38 +31,36 @@ def predict():
     if request.method == 'POST':
         review = request.form['review']
         data = [review]
-        #tokenizer.fit_on_texts(data)
         enc = tokenizer.texts_to_sequences(data)
         enc = pad_sequences(enc, maxlen=max_length, dtype='int32', value=0)
         my_prediction = model.predict(array([enc][0]))[0]
         #class1 = model.predict_classes(array([enc][0]))[0]
         sentiment = model.predict(enc)[0]
-        print(my_prediction)
-        print(review)
-        print(data)
+        #print(my_prediction)
+        #print(review)
+        #print(data)
         #neg = np.argmax(sentiment)
         print(sentiment)
         if (np.argmax(sentiment) == 0):
             sentimennya = 0
             # neg = sentiment
             # sentiment = neg
-            print('Sentimen: Negatif')
+            #print('Sentimen: Negatif')
         elif (np.argmax(sentiment) == 1):
             sentimennya = 1
             # net = sentiment
             # sentiment = net
-            print('Sentimen: Netral')
+            #print('Sentimen: Netral')
         else:
             sentimennya = 2
             # pos = sentiment
             # sentiment = pos
-            print('Sentimen: Positif')
+            #print('Sentimen: Positif')
        
-    return render_template('result.html',prediction = sentimennya)
+    return render_template('result.html',prediction = sentimennya, teks=review)
 
 
 # def muncul():
-#     max_length = 200
 #     if request.method == 'POST':
 #         inputan = request.form['review']
 #         #data = [review]
