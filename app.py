@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,request
+from flask import Flask,render_template,url_for,request, redirect
 import numpy as np
 #import pickle
 import pickle5 as pickle
@@ -22,8 +22,11 @@ model.load_weights("geaNlp_weight_model.h5")
 with open('tokenizer2.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
-
 @app.route('/')
+def default():
+    return redirect('/home.html')
+
+@app.route('/home.html')
 def home():
     return render_template('home.html')
 
