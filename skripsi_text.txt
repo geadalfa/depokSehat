@@ -1,0 +1,13 @@
+</div>
+
+<p style="color:white;font-size:20;text-align: center;"><b>Results for Comment</b></p>
+<div class="results"
+"w3-container w3-card " style= "border-radius:58px;background-color:white;padding:40px;width: 550px;" id="ip5">
+
+<p>Teks yang anda masukkan: {{ teks }}</p>
+</div>
+
+covid membunuh perlahan hingga meninggal
+Covid jahat membunuh orang yang tewas 
+menyiapkan segala sesuatu
+banyak orang telah sembuh dari covid dan sehat wal'afiat
