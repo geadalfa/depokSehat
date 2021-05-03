@@ -3,15 +3,18 @@ import numpy as np
 #import pickle
 import pickle5 as pickle
 import pandas as pd
+import tensorflow as tf
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import model_from_json
 from numpy import array
 
-
+#<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 app=Flask(__name__)
+#model = tf.create_model()
 model = load_model("lstmModel.h5")
+model.load_weights("geaNlp_weight_model.h5")
 
 
 # with open(path_to_protocol5, "rb") as fh:
@@ -31,6 +34,7 @@ def predict():
     if request.method == 'POST':
         review = request.form['review']
         data = [review]
+        #tokenizer.fit_on_texts(data)
         enc = tokenizer.texts_to_sequences(data)
         enc = pad_sequences(enc, maxlen=max_length, dtype='int32', value=0)
         my_prediction = model.predict(array([enc][0]))[0]
