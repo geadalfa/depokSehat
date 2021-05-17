@@ -119,29 +119,21 @@ bertelinga merah,-3
 tersirap hatinya,-2
 merah telinga,-3
 mencak-mencak,-5
-gaada,-3
-manjur,-1
-mujarab,-1
+gaada,-2
 beber,-2
 singkap,-3
 penangkis,-3
 mending,-3
 akibat,-3
 satir,-2
-nyanyian,-2
 menyibuk,-2
-gara,-4
 dikit,-4
 ilang,-5
 kepeng,-2
 bodo,-5
-air,-1
 suri,-1
 ihh,-5
-asasi,-3
 menenes,-2
-tumpuan,-3
-fondasi,-3
 beliin,-1
 sekam,-3
 maafin,-3
@@ -159,7 +151,6 @@ kalap,-3
 sedeng,-2
 berubah akal,-2
 serem,-5
-terlalu,-3
 sakit jiwa,-4
 gendeng,-2
 berubah ingatan,-3
@@ -169,7 +160,6 @@ sakit ingatan,-4
 sesat akal,-2
 duh,-4
 emg,-1
-hujan,-2
 aduh,-3
 cerita khayal,-2
 typo,-2
@@ -180,47 +170,32 @@ mafhum,-1
 fiksi,-2
 omong kosong,-4
 bales,-3
-profit,-1
 waris,-2
 selisih,-4
 senjang,-4
-bareng,-3
 ekstasi,-3
 laper,-3
 hendaknya,-1
 membandel,-5
 ngaku,-3
-kiranya,-1
 telat,-5
 kopong,-4
-ngerti,-1
 keduniaan,-2
 nol,-3
-nyari,-2
 sorry,-4
 peranakan,-3
 bastar,-2
 tega,-5
 berdenyut,-3
 kayaknya,-3
-sibuk,-3
+sibuk,-1
 ringan tangan,-1
-bergelora,-2
 sampai rasa,-2
-energik,-1
-membara,-3
-berkobar-kobar,-2
-menyala,-2
 mentolo,-2
 sampai hati,-2
-bersungguh-sungguh,-1
-tren,-2
 menyembur,-3
 imbas,-4
-aliran udara,-1
 melesit,-1
-rahayu,-2
-kemungkinan,-1
 menggusari,-3
 mencurat,-1
 memarahi,-5
@@ -236,15 +211,12 @@ gentas,-2
 nanya,-1
 melelah,-3
 bosen,-4
-maksudnya,-1
 bersusah hati,-5
 berkabung,-5
 receh,-4
 bermuram durja,-5
-pls,-3
 berlara-lara,-4
 opp,-1
-seneng,-1
 bersungkawa,-3
 bersusah,-5
 peluk,-3
@@ -256,8 +228,6 @@ gausah,-4
 sengsara,-5
 buru-buru,-3
 kencang,-3
-kilat,-2
-begini,-1
 akas,-2
 mendahului,-1
 mengadang,-3
@@ -266,22 +236,15 @@ terampil,-3
 pesat,-2
 sebat,-3
 sput,-2
-filsafat,-3
 dogma,-3
-imut,-1
 doktrin,-3
 lapar,-5
 dominan,-2
 masif,-3
-keliatan,-1
 keras tulang,-2
-tangguh,-2
 keseser,-4
 maksa,-5
-bertanduk,-2
 luput,-3
-jaman,-2
-menggeliat,-3
 tumpas,-4
 keok,-2
 tercecer,-3
@@ -291,16 +254,12 @@ lipur,-2
 bedegap,-2
 besar lengan,-2
 gelibat,-2
-suka cita,-1
 pacaran,-3
-bersemangat,-1
-berbahagia,-1
 berdesir,-2
 tersuntuk,-4
 adek,-1
 block,-4
 pening,-3
-apanya,-3
 kliyengan,-4
 pusing,-4
 jenguk,-2
