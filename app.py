@@ -2,13 +2,27 @@ from flask import Flask,render_template,url_for,request, redirect
 import numpy as np
 #import pickle
 import pickle5 as pickle
-import pandas as pd
-import tensorflow as tf
+#import pandas as pd
+#import tensorflow as tf
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing.text import Tokenizer
+#from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.models import model_from_json
+#from tensorflow.keras.models import model_from_json
+import random
 from numpy import array
+from bokeh.models import (HoverTool, FactorRange, Plot, LinearAxis, Grid,
+                          Range1d)
+from bokeh.models.glyphs import VBar
+from bokeh.plotting import figure
+from bokeh.plotting import figure
+from bokeh.embed import components
+from bokeh.models.sources import ColumnDataSource
+from bokeh.io import output_file, show
+from bokeh.models import ColumnDataSource
+from bokeh.palettes import Spectral6
+from bokeh.plotting import figure
+from bokeh.transform import factor_cmap
+
 
 #<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 app=Flask(__name__)
@@ -23,6 +37,24 @@ with open('tokenizer2.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 @app.route('/')
+def chart():
+    fruits = ['Apples', 'Pears', 'Nectarines', 'Plums', 'Grapes', 'Strawberries']
+    counts = [5, 3, 4, 2, 4, 6]
+
+    source = ColumnDataSource(data=dict(fruits=fruits, counts=counts))
+
+    p = figure(x_range=fruits, plot_height=250, toolbar_location=None, title="Fruit counts")
+    p.vbar(x='fruits', top='counts', width=0.9, source=source, legend_field="fruits",
+           line_color='white', fill_color=factor_cmap('fruits', palette=Spectral6, factors=fruits))
+
+    p.xgrid.grid_line_color = None
+    p.y_range.start = 0
+    p.y_range.end = 9
+    p.legend.orientation = "horizontal"
+    p.legend.location = "top_center"
+
+    return render_template("home.html", bars_count=p)
+
 def default():
     return redirect('/home.html')
 
