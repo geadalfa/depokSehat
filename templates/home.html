@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/style.css" />
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -38,13 +39,22 @@ background-blend-mode: darken;">
         <div class="main-div main-div1">
             <h1>Analisis Sentimen</h1>
         </div>
-        <table>
-            <tr>
-                {% for header in headings %}
-
-            </tr>
-        </table>
     </div>
+
+    <table class="table">
+        <tr class="table__header">
+            {% for header in headings %}
+            <th class="table__cell">{{ header }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in positif1 %}
+        <tr class="table__row">
+            {% for cell in row %}
+            <td class="table__cell">{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
 
     <div style="margin-bottom: -150px;" class="wrapper">
         <div class="main-div main-div2">
@@ -68,6 +78,22 @@ background-blend-mode: darken;">
 </body>
 
 <style>
+    .table {
+        background-color: #f5f5f5;
+    }
+    
+    .table__row:nth-child(even) {
+        background-color: #e5e5e5;
+    }
+    
+    .table__header {
+        text-align: left;
+    }
+    
+    .table__cell {
+        background-color: white;
+    }
+    
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
     .website {
         font-weight: bold;

@@ -31,10 +31,16 @@ def table():
     negatif1 = df.loc[df['nilai'] < -25].head()
     netral1 = df.loc[df['nilai'] == -1].head()
     headings = ("Tweet", "Nilai", "Sentimen")
+    data = (
+        ("Aku bisa membuatmu", "15", "Positif"),
+        ("Covid membunuhmu", "-20", "Negatif")
+    )
+    tuples = [tuple(x) for x in positif1.values]
     kolom2 = df[['cleaned_tweets', 'sentimen']]
     senti_count = df['sentimen'].value_counts()
     return render_template('home.html', sentimen=senti_count, tabel=df, positif=positif1,
-                           negatif=negatif1, netral=netral1, table_headings = headings)
+                           negatif=negatif1, netral=netral1, headings = headings, data=data,
+                           positif1=tuples)
 
 
 def default():
