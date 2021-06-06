@@ -35,12 +35,13 @@ def table():
         ("Aku bisa membuatmu", "15", "Positif"),
         ("Covid membunuhmu", "-20", "Negatif")
     )
-    tuples = [tuple(x) for x in positif1.values]
+    tuples1 = [tuple(x) for x in positif1.values]
+    tuples2 = [tuple(x) for x in negatif1.values]
+    tuples3 = [tuple(x) for x in netral1.values]
     kolom2 = df[['cleaned_tweets', 'sentimen']]
     senti_count = df['sentimen'].value_counts()
-    return render_template('home.html', sentimen=senti_count, tabel=df, positif=positif1,
-                           negatif=negatif1, netral=netral1, headings = headings, data=data,
-                           positif1=tuples)
+    return render_template('home.html', sentimen=senti_count, tabel=df, headings = headings, 
+                            data=data, positif=tuples1, negatif=tuples2, netral=tuples3)
 
 
 def default():

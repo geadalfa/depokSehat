@@ -47,7 +47,37 @@ background-blend-mode: darken;">
             <th class="table__cell">{{ header }}</th>
             {% endfor %}
         </tr>
-        {% for row in positif1 %}
+        {% for row in positif %}
+        <tr class="table__row">
+            {% for cell in row %}
+            <td class="table__cell">{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table class="table">
+        <tr class="table__header">
+            {% for header in headings %}
+            <th class="table__cell">{{ header }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in netral %}
+        <tr class="table__row">
+            {% for cell in row %}
+            <td class="table__cell">{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+
+    <table class="table">
+        <tr class="table__header">
+            {% for header in headings %}
+            <th class="table__cell">{{ header }}</th>
+            {% endfor %}
+        </tr>
+        {% for row in negatif %}
         <tr class="table__row">
             {% for cell in row %}
             <td class="table__cell">{{ cell }}</td>
@@ -80,6 +110,12 @@ background-blend-mode: darken;">
 <style>
     .table {
         background-color: #f5f5f5;
+        width: 100;
+        border: 1;
+        float: left;
+        margin-left: 20;
+        margin-top: 5;
+        padding: 5px;
     }
     
     .table__row:nth-child(even) {
@@ -92,6 +128,7 @@ background-blend-mode: darken;">
     
     .table__cell {
         background-color: white;
+        color: #000000
     }
     
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
