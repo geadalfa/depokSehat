@@ -39,6 +39,7 @@ def table():
     senti_count2=list(zip(senti_count,senti_count.index))
     senti_count2=tuple(zip(senti_count,senti_count.index))
     senti_count2 = [tuple(str(x) for x in tup) for tup in senti_count2]
+    senti_count2 = [(sub[1], sub[0]) for sub in senti_count2]
     return render_template('home.html', sentimen=senti_count, tabel=df, headings = headings, 
                             positif=tuples1, negatif=tuples2, netral=tuples3, sentimen2=senti_count2)
 

@@ -94,27 +94,22 @@ background-blend-mode: darken;">
     </div>
 
 
-    <div>
+    <div class="tengah">
         <table class="styled-table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Points</th>
+                    <th>Sentimen</th>
+                    <th>Total</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Dom</td>
-                    <td>6000</td>
-                </tr>
+                {% for row in sentimen2 %}
                 <tr class="active-row">
-                    <td>Melissa</td>
-                    <td>5150</td>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
                 </tr>
-                <tr>
-                    <td>Yoms</td>
-                    <td>ya</td>
-                </tr>
+                {% endfor %}
             </tbody>
         </table>
     </div>
@@ -141,8 +136,9 @@ background-blend-mode: darken;">
 </body>
 
 <style>
-    #outer {
-        text-align: center;
+    .tengah {
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #inner {
@@ -198,6 +194,8 @@ background-blend-mode: darken;">
         font-family: sans-serif;
         min-width: 400px;
         box-shadow: 0 0 20px rgb(80, 214, 18);
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .styled-table thead tr {
