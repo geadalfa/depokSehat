@@ -41,7 +41,8 @@ background-blend-mode: darken;">
         </div>
     </div>
 
-    <div style="overflow-x:auto;">
+
+    <div class="tebel">
         <table class="table">
             <tr class="table__header">
                 {% for header in headings %}
@@ -56,7 +57,9 @@ background-blend-mode: darken;">
             </tr>
             {% endfor %}
         </table>
+    </div>
 
+    <div class="tebel">
         <table class="table">
             <tr class="table__header">
                 {% for header in headings %}
@@ -71,7 +74,9 @@ background-blend-mode: darken;">
             </tr>
             {% endfor %}
         </table>
+    </div>
 
+    <div class="tebel">
         <table class="table">
             <tr class="table__header">
                 {% for header in headings %}
@@ -85,6 +90,32 @@ background-blend-mode: darken;">
                 {% endfor %}
             </tr>
             {% endfor %}
+        </table>
+    </div>
+
+
+    <div>
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dom</td>
+                    <td>6000</td>
+                </tr>
+                <tr class="active-row">
+                    <td>Melissa</td>
+                    <td>5150</td>
+                </tr>
+                <tr>
+                    <td>Yoms</td>
+                    <td>ya</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 
@@ -110,18 +141,40 @@ background-blend-mode: darken;">
 </body>
 
 <style>
-    .table {
-        background-color: #f5f5f5;
-        width: 100;
-        border: 1;
+    #outer {
+        text-align: center;
+    }
+    
+    #inner {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        vertical-align: text-top;
+    }
+    
+    .tebel {
+        width: 30%;
         float: left;
+        margin: 10px;
+    }
+    
+    .table {
+        background-color: #ff0000;
+        border: 1;
+        width: 100%;
         margin-left: 20;
         margin-top: 5;
         padding: 5px;
+        font-size: 12px;
+        font-family: Helvetica;
+    }
+    
+    .table__row {
+        background-color: #ff0000;
     }
     
     .table__row:nth-child(even) {
-        background-color: #e5e5e5;
+        background-color: #ff0000;
     }
     
     .table__header {
@@ -129,8 +182,49 @@ background-blend-mode: darken;">
     }
     
     .table__cell {
-        background-color: white;
-        color: #000000
+        color: #000000;
+        background-color: #fdfdfd
+    }
+    
+    .table__cell:nth-child(even) {
+        background-color: #009879;
+        color: #dddddd
+    }
+    
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgb(80, 214, 18);
+    }
+    
+    .styled-table thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+    }
+    
+    .styled-table tbody tr {
+        border-bottom: thin solid #dddddd;
+    }
+    
+    .styled-table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+    
+    .styled-table tbody tr {
+        background-color: #ffffff;
+    }
+    
+    .styled-table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+    
+    .styled-table tbody tr.active-row {
+        font-weight: bold;
+        color: #009879;
     }
     
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
