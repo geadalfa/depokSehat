@@ -1,4 +1,4 @@
-from flask import Flask,render_template,url_for,request, redirect
+from flask import Flask,render_template,url_for,request, redirect, Response
 import numpy as np
 #import pickle
 import pickle5 as pickle
@@ -9,7 +9,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 #from tensorflow.keras.models import model_from_json
 from numpy import array
-
+import json
+import plotly
+import plotly.express as px
+import plotly.graph_objects as go
 
 
 #<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
@@ -49,6 +52,14 @@ def table():
     return render_template('home.html', sentimen=senti_count, tabel=df, headings = headings, labels=labels, values=values, 
                             positif=tuples1, negatif=tuples2, netral=tuples3, sentimen2=senti_count2, set=zip(values, labels))
 
+
+def diagram():
+    labels = ['Oxygen','Hydrogen','Carbon_Dioxide','Nitrogen']
+    values = [4500, 2500, 1053, 500]
+
+    # Use `hole` to create a donut-like pie chart
+    fig = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.3)])
+    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
 
 def default():
     return redirect('/home.html')
@@ -109,6 +120,11 @@ def predict():
        
     return render_template('result.html',prediction = sentimennya, teks=review)
 
+@app.route('/style.css',methods=['GET'])
+def stylecss():
+    read_file = open("static/style.css", "r")
+    opens = read_file.read()
+    return Response(opens, mimetype='text/css')
 
 # def muncul():
 #     if request.method == 'POST':
