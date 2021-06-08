@@ -11,11 +11,15 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from numpy import array
 import json
 import plotly
+#import chart_studio.plotly as py
 import plotly.express as px
 import plotly.graph_objects as go
+#from charts.bar_chart import plot_chart
+import plotly.graph_objs as go
+import plotly.offline as pyo
+from flask import Markup
 
 
-#<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 app=Flask(__name__)
 #model = tf.create_model()
 model = load_model("lstmModel.h5")
@@ -54,12 +58,38 @@ def table():
 
 
 def diagram():
-    labels = ['Oxygen','Hydrogen','Carbon_Dioxide','Nitrogen']
-    values = [4500, 2500, 1053, 500]
+    df = pd.read_csv("C:/Users/Alfa/Program Skripsi/countries of the world.csv")
+    trace1 = go.Bar(x=df["Country"][0:20], y=df["GDP ($ per capita)"])
+    layout = go.Layout(title="GDP of the Country", xaxis=dict(title="Country"),
+                       yaxis=dict(title="GDP Per Capita"), )
+    data = [trace1]
+    fig = go.Figure(data=data, layout=layout)
+    chart_div_string = pyo.offline.plot(fig, include_plotlyjs=False, output_type='div')
+    chart_div_for_use_in_jinja_template = Markup(chart_div_string)
+    #fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    return render_template('home.html', chart=chart_div_for_use_in_jinja_template)
+    # count = 500
+    # xScale = np.linspace(0, 100, count)
+    # yScale = np.random.randn(count)
+ 
+    # # Create a trace
+    # trace = go.Scatter(
+    #     x = xScale,
+    #     y = yScale
+    # )
+ 
+    # data = [trace]
+    # graphJSON = json.dumps(data, cls=plotly.utils.PlotlyJSONEncoder)
+    # return render_template('index1.html',
+    #                            graphJSON=graphJSON)
 
-    # Use `hole` to create a donut-like pie chart
-    fig = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.3)])
-    graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    # labels = ['Oxygen','Hydrogen','Carbon_Dioxide','Nitrogen']
+    # values = [4500, 2500, 1053, 500]
+    # # Use `hole` to create a donut-like pie chart
+    # fig = go.Pie(labels=labels, values=values, hole=.3)
+    # fig = [fig]
+    # graphJSON = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
+    # return render_template('home.html', graphJSON=graphJSON)
 
 def default():
     return redirect('/home.html')
