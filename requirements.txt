@@ -54,9 +54,6 @@ kaggle==1.5.12
 Keras-Preprocessing==1.1.2
 lazy-object-proxy==1.6.0
 mccabe==0.6.1
-mkl-fft==1.2.0
-mkl-random==1.1.0
-mkl-service==2.3.0
 modin==0.9.1
 msgpack==0.6.2
 msgpack-numpy==0.4.1
