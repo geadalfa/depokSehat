@@ -14,7 +14,7 @@ from numpy import array
 app=Flask(__name__)
 #model = tf.create_model()
 model = load_model("lstmModel.h5")
-model.load_weights("geaNlp_weight_model.h5")
+model.load_weights("geaNlp_weight_model2.h5")
 
 
 # with open(path_to_protocol5, "rb") as fh:
